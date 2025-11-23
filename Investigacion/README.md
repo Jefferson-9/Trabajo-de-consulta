@@ -10,7 +10,7 @@ Donde:
 * $\overline{x} = \frac{a+b}{2}$: Punto medio del intervalo.
 ## 3. Arquitectura del Código
 ### 3.1 Función de orden Superior (`integracion`)
-La pieza central del proyecto es la función 'integracion'. Se considera de Orden Superior porque recibe otra función como parámetro (`f`).
+La pieza central del proyecto es la función `integracion`. Se considera de Orden Superior porque recibe otra función como parámetro (`f`).
 ```scala
 def integracion(f: Double => Double, a: Double, b: Double): Double = {
   val x: Double = (a + b) / 2
@@ -56,3 +56,4 @@ Se realizaron pruebas con 7 funciones matemáticas distintas. A continuación se
 ## 6. Referencias Bibliográficas 
 1. **Cátedra de Programación Funcional y Reactiva.** (2025). *Trabajo de consulta: Higher Order Functions - Integración Numérica*. Universidad Técnica Particular de Loja (UTPL). Consultado para: Planteamiento del problema y ecuaciones matemáticas.
 2. **Chapra, S. C., & Canale, R. P.** (2015). *Métodos numéricos para ingenieros* (7a ed.). McGraw-Hill Education. Consultado para: Teoría del error y Regla de Simpson 1/3.
+3. **Odersky, M., Spoon, L., & Venners, B.** (2016). *Programming in Scala* (3a ed.). Artima Press. Consultado para: Sintaxis de Scala y Funciones de Orden Superior.

@@ -18,10 +18,10 @@ def integracion(f: Double => Double, a: Double, b: Double): Double = {
 } 
 ```
 * **Entrada:** Recibe el comportamiento matemático `f` (tipo `Double => Double`) y los límites `a` y `b`.
-* **Proceso:** Evalúa la función `f` en los puntos clave (*a, $\overline{x}$, b*) sin conocer la lógica interna `f`.
+* **Proceso:** Evalúa la función `f` en los puntos clave ($a, \overline{x}, b$) sin conocer la lógica interna `f`.
 * **Salida:** Retorna el valor aproximado del área (tipo `Double`).
 ### 3.2 Tipado Estricto
-Para garantizar la robustez de software, se utilizó **Tipado Estricto** en todo el proyecto. No se utilizó inferencia de tipos en las definiciones clave.
+Para garantizar la robustez del software, se utilizó **Tipado Estricto** en todo el proyecto. No se utilizó inferencia de tipos en las definiciones clave.
 Ejemplo:
 ```scala 
 val f1: Double => Double = (x: Double) => -Math.pow(x, 2) + 8 * x - 12 

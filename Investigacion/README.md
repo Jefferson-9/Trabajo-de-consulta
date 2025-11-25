@@ -82,4 +82,4 @@ Así mismo con los demás fragmentos de código donde necesitaba verificar que e
 1. **Cátedra de Programación Funcional y Reactiva.** (2025). *Trabajo de consulta: Higher Order Functions - Integración Numérica*. Universidad Técnica Particular de Loja (UTPL). Consultado para: Planteamiento del problema y ecuaciones matemáticas.
 2. **Chapra, S. C., & Canale, R. P.** (2015). *Métodos numéricos para ingenieros* (7a ed.). McGraw-Hill Education. Consultado para: Teoría del error y Regla de Simpson 1/3.
 3. **Odersky, M., Spoon, L., & Venners, B.** (2016). *Programming in Scala* (3a ed.). Artima Press. Consultado para: Sintaxis de Scala y Funciones de Orden Superior.
-4. **Matemáticas Piña Profe Piña.** (2020, 19 mayo). *Método de Simpson 1/3* [Video]. YouTube. https://www.youtube.com/watch?v=I1dWC7BHcIE
+4. **Matemáticas Piña Profe Piña.** (2020, 19 mayo). *Método de Simpson 1/3* Video. YouTube. https://www.youtube.com/watch?v=I1dWC7BHcIE

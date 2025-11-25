@@ -53,7 +53,33 @@ Se realizaron pruebas con 7 funciones matemáticas distintas. A continuación se
 ## 5. Conclusiones
 * El uso de Funciones de Orden Superior permitió desacoplar la lógica de integración de las ecuaciones matemáticas específicas, resultando en un código reutilizable y modular.
 * El **Tipado Estricto** facilita la lectura del código y previene errores en tiempo de compilación al asegurar que los datos fluyan con la estructura correcta.
-## 6. Referencias Bibliográficas 
+## 6. Uso de la IA
+Utilice la IA Generativa como herramienta de apoyo para la revisión de código y la refactorización hacia un tipado estricto, asegurando así la robustez y calidad del código final.
+Usé el siguiente **prompt:**
+`Actúa como un Ingeniero de Software Senior experto en Scala y Programación Funcional.`
+`Estoy desarrollando un código en Scala para resolver integrales numéricas usando la Regla de Simpson 1/3 como parte de mi asignatura universitaria. La lógica matemática y la estructura de funciones de orden superior ya están implementadas y funcionan.`
+`Necesito que realices la Revisión de Código que está enfocado en la robustez. Toma mi código base y refactorízalo cumpliendo estrictamente con los siguientes requisitos:`
+`1. Tipado Estricto: Elimina cualquier inferencia de tipos, quiero que declares explícitamente el tipo de dato en todas las variables, parámetros de funciones, valores de retorno y dentro de las funciones anónimas (lambdas) e iteradores (map).`
+`2. Verificación de Sintaxis: Asegúrate de que la sintaxis de Scala sea limpia y siga las convenciones estándar.`
+`3. No cambies la lógica: Mantén la fórmula matemática de Simpson tal como la he escrito, solo mejora la definición del código.`
+**Mi código es el siguiente:**
+```scala
+ejercicios.map { e =>
+    val id = e._1   
+    val func = e._2    
+    val a = e._3
+    val b = e._4
+    val esperado = e._5
+
+    val obtenido = integracion(func, a, b)
+    val error = calcularError(esperado, obtenido)
+
+    println(f"$id%-5d | $obtenido%1.5f         | $esperado%1.5f         | $error%1.6f")
+  }
+```
+Así mismo con los demás fragmentos de código donde necesitaba verificar que este correctamente el tipado y la sintaxis.
+## 7. Referencias Bibliográficas 
 1. **Cátedra de Programación Funcional y Reactiva.** (2025). *Trabajo de consulta: Higher Order Functions - Integración Numérica*. Universidad Técnica Particular de Loja (UTPL). Consultado para: Planteamiento del problema y ecuaciones matemáticas.
 2. **Chapra, S. C., & Canale, R. P.** (2015). *Métodos numéricos para ingenieros* (7a ed.). McGraw-Hill Education. Consultado para: Teoría del error y Regla de Simpson 1/3.
 3. **Odersky, M., Spoon, L., & Venners, B.** (2016). *Programming in Scala* (3a ed.). Artima Press. Consultado para: Sintaxis de Scala y Funciones de Orden Superior.
+4. **Matemáticas Piña Profe Piña.** (2020, 19 mayo). *Método de Simpson 1/3* [Video]. YouTube. https://www.youtube.com/watch?v=I1dWC7BHcIE
